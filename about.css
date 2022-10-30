@@ -12,7 +12,12 @@ section {
     margin-top: 10vh;
 }
 
-.gallery img {
+.img-wrapper {
+    position: relative;
+    transition: 1s;
+}
+
+.gallery img, .img-wrapper .shader {
     height: 400px;
     object-fit: cover;
     object-position: top;
@@ -20,8 +25,29 @@ section {
     margin: 1rem 0;
 }
 
-/* @media screen and (max-width: 1024px) {
-    .about-details {
-        flex-direction: column;
-    }
-} */
+.img-wrapper .shader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0;
+    transition: 1s;
+}
+
+.img-wrapper .subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    font-size: 1.3rem;
+    color: transparent;
+}
+
+.img-wrapper:hover .shader {
+    opacity: 60%;
+}
+
+.img-wrapper:hover .subtitle {
+    color: white;
+}
