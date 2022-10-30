@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // NAV SCROLL ANIMATION
 function navScrollAnimation() {
 
+    console.log("test")
     const header = document.querySelector('header.main-header');
     const hamburgerLines = document.querySelectorAll('.menu line');
     const logo = document.querySelector('.logo');
+    console.log(header);
 
     // tl.reversed is default to false
     const tl = new TimelineMax({ paused: true, reversed: false });

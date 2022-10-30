@@ -8,6 +8,10 @@ section {
     font-size: 1.8rem;
 }
 
+.about-us {
+    margin-top: 10vh;
+}
+
 .gallery img {
     height: 400px;
     object-fit: cover;
