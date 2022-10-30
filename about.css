@@ -1,0 +1,23 @@
+section {
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 0;
+}
+
+#about h1 {
+    font-size: 1.8rem;
+}
+
+.gallery img {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .about-details {
+        flex-direction: column;
+    }
+} */

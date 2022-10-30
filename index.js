@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // NAV SCROLL ANIMATION
 function navScrollAnimation() {
 
-    const header = document.querySelector('header');
+    const header = document.querySelector('header.main-header');
     const hamburgerLines = document.querySelectorAll('.menu line');
     const logo = document.querySelector('.logo');
 

@@ -63,7 +63,7 @@ li {
 /* ==================================================================
                             NAVBAR
 ===================================================================*/
-header {
+header.main-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -82,6 +82,8 @@ nav {
   
 .logo {
     font-size: 20px;
+    font-weight: normal;
+    margin: 0;
 }
 
 .nav-open {
@@ -99,7 +101,7 @@ nav {
     justify-items: center;
     align-items: start;
     /* text-align: center; */
-    transform: translateX(500px);
+    transform: translateX(100%);
 }
 
 .nav-open ul {
@@ -194,6 +196,7 @@ footer .footer-detail {
 
 footer p, footer a {
     color: #bbbbbb;
+    margin: 0 !important;
 }
 
 footer a:hover {
