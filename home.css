@@ -81,11 +81,6 @@
 /* ============================================
                 INTRO SECTION 
 ==============================================*/
-/* section.intro {
-  height: fit-content;
-  background-color: #417280;
-} */
-
 section.intro {
   min-height: 100vh;
   background-color: #417280;
@@ -97,12 +92,14 @@ section.intro::after {
   content: "";
   position: absolute;
   background: #2ca9cc;
+  opacity: 0.6;
   height: 150px;
   min-width: 300px;
   max-width: 500px;
   top: 20%;
   right: -10%;
   transform: translateX(-20%);
+  border-radius: 0.6rem;
 }
 
 .intro .container, .intro-details, .intro-pic1, .intro-pic2 {
@@ -115,6 +112,20 @@ section.intro::after {
 
 .arrow-link {
   width: 70px;
+  transform: scale(1);
+}
+
+.arrow-link:hover {
+  animation: enlarge 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 
 .img-wrapper img {
@@ -123,19 +134,10 @@ section.intro::after {
   object-fit: cover;
   object-position: top;
   z-index: 2;
+  border-radius: 0.6rem;
 }
 
 .intro-pic2 .spacer-50 {
   position: relative;
   padding-bottom: 25vh;
 }
-
-/* .spacer-50 .blue-rectangle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 50px;
-  min-width: 100px;
-  max-width: 400px;
-  background: #2ca9cc;
-} */
