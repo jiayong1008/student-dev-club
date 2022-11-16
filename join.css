@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  } */
+
+.blog-container::after {
+    content: "";
+    clear: both;
+    display: block;
+} 
+[class*="col-"] {
+    float: left;
+    padding: 35px;
+  }
+
+#join-us h1 {
+    font-size: 1.8rem;
+}
+
+#join-us p {
+    text-align: center;
+}
+
+.join-us {
+    margin-top: 10vh;
+}
+
+.join-us-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.join-us-form, table{
+    border: 10px solid transparent;
+    background-image: url("images/join-1.jpg");
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    border-width: 110px;
+}
+
+.join-us-form, td {
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px gray;
+ }
+
+[type=text]{
+    height:30px;
+    border-radius: 6px ;
+    border: 2px solid lightskyblue ;
+}
+
+input[type=text]:focus{
+    background-color: silver;
+}
+
+select {
+    height: 30px;
+    border: 2px solid lightskyblue ;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    font-family: Apple Chancery;
+}
+
+input[type=submit], input[type=reset]{
+    text-align: center;
+    font-size: 18px;
+    color: darkblue;
+    padding: 10px 8px;
+    margin: 2px 2px;
+    background-color: white;
+    border-radius: 6px;
+}

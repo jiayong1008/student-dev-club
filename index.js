@@ -11,13 +11,15 @@ function navScrollAnimation() {
     const header = document.querySelector('header.main-header');
     const hamburgerLines = document.querySelectorAll('.menu line');
     const logo = document.querySelector('.logo');
+    const deskNavLinks = document.querySelectorAll('.desk-nav-link');
 
     // tl.reversed is default to false
     const tl = new TimelineMax({ paused: true, reversed: false });
 
     tl.fromTo(header, 0.15, {background: 'none', opacity: 1}, {background: 'white', opacity: 0.9})
     .fromTo(logo, 0.2, {color: 'white'}, {color: 'black'}, '-=0.1')
-    .fromTo(hamburgerLines, 0.2, {stroke: 'white'}, {stroke: 'black'}, '-=0.2');
+    .fromTo(hamburgerLines, 0.2, {stroke: 'white'}, {stroke: 'black'}, '-=0.2')
+    .fromTo(deskNavLinks, 0.2, {color: 'white'}, {color: 'black'}, '-=0.3');
 
     window.onscroll = () => {
         if (window.scrollY > 30) {
@@ -42,7 +44,7 @@ function navOpenAnimation() {
     const hamburgerLines = document.querySelectorAll('.menu line');
     const navOpen = document.querySelector('.nav-open');
     const navBreaks = document.querySelectorAll('hr');
-    const navLinks = document.querySelectorAll('.nav-links');
+    const navLinks = document.querySelectorAll('.burger-nav-link');
 
     // tl.reversed is default to false
     const tl = new TimelineMax({ paused: true, reversed: true });
