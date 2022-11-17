@@ -55,7 +55,7 @@
 
 .contact-info{
     width:40%;
-    height:425px;
+    height:449px;
     padding-top: 30px;
     background: url(images/coding.png);
     background-size: cover;
@@ -393,7 +393,3 @@
         border-top-right-radius:0px;
     }
 }
-
-
-
-
