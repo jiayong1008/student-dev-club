@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', e => {
         e.preventDefault();
         validateInputs();
+        form.reset();
     });
 
 
@@ -28,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     const isValidName = name => {
-        var regName = /\d+$/g;
-        console.log(regName.test(String(name).toLowerCase())); 
-        return regName.test(String(name).toLowerCase());
+        var regName = /^[a-zA-Z ]*$/; 
+        return regName.test(name)
     }
     
     const isValidEmail = email => {
@@ -43,8 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const emailValue = email.value.trim();
 
         if(!isValidName(fullnameValue)) {
-            console.log("Integer");
-            setError(fullname, 'Enter letters');
+            setError(fullname, 'Please enter your name properly');
         } else {
             setSuccess(fullname);
         }
