@@ -30,11 +30,6 @@ a {
     transition: color 0.4s;
 }
 
-a:hover, .logo-name:hover {
-    /* color: rgb(206,50,50) !important; */
-    color: rgba(43, 55, 96, 1) !important;
-}
-
 li {
     list-style: none;
 }
@@ -92,6 +87,18 @@ nav {
     margin: 0;
 }
 
+.desk-nav-links {
+    width: 75%;
+}
+
+.desk-nav-link {
+    color: white;
+}
+
+.desk-nav-link:hover {
+    color: rgb(137, 158, 227);
+}
+
 .nav-open {
     position: absolute;
     top: 0px;
@@ -120,7 +127,11 @@ nav {
     justify-content: space-around;
 }
 
-.nav-links {
+.nav-open a:hover {
+    color: rgb(75, 102, 189);
+}
+
+.burger-nav-link {
     color: rgb(82, 82, 82);
     font-size: 1.2rem;
     display: inline-block;

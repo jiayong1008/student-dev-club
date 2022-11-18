@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -16,18 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/index.css"> <!-- General CSS stylings for all pages -->
-    <link rel="stylesheet" href="/nicepage.css">
-    <link rel="stylesheet" href="/about.css"> <!-- CSS file specifically for this page -->
-    
+    <link rel="stylesheet" href="/ContactUs.css"> <!-- CSS file specifically for this page -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- Scripts -->
     <script src="/index.js"></script>
+    <script defer src="./ContactUs.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
     
     <title>Student Developer CLub</title>
 </head>
-
-<body id="about">
+<body>
     <header class="main-header">
         <nav>
             <h3 class="logo">Student Dev</h3>
@@ -41,68 +40,80 @@
                 <ul>
                     <li><a class="nav-links" href="./home.html">Home</a></li><hr>
                     <li><a class="nav-links" href="#">Activities</a></li><hr>
-                    <li><a class="nav-links" href="./blog.html"</a></li><hr>
+                    <li><a class="nav-links" href="#">Blog</a></li><hr>
                     <li><a class="nav-links" href="./about.html">About Us</a></li><hr>
                     <li><a class="nav-links" href="#">FAQ</a></li><hr>
-                    <li><a class="nav-links" href="z">Join Us</a></li><hr>
-                    <li><a class="nav-links" href="./ContactUs.html">Contact Us</a></li><hr>
-                    <li><a class="nav-links" href="./members.html">Members</a></li>
+                    <li><a class="nav-links" href="#">Join Us</a></li><hr>
+                    <li><a class="nav-links" href="#">Contact</a></li><hr>
+                    <li><a class="nav-links" href="#">Members</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section class="about-us">
-        <div class="container">
-            <div class="col-md-10 col-lg-8 w-100 d-flex flex-column justify-content-center">
-                <h1 class="text-center">ABOUT US</h1>
-                <div class="about-details d-flex flex-column flex-md-row gap-3">
-                    <p class="p-2">
-                        We are a passionate group of student developers who are willing to learn more than what's taught in the University.
-                        We build solutions based on real business projects available out there, and work as a team to deliver the project.
-                        It is in our belief that developing real business projects will bridge the gap between theories that we learnt in University and the real world.
-                        Students will gain realistic industry knowledge as we work directly with companies to deliver solutions.
-                    </p>
-                    <p class="p-2">
-                        Students who are active in this club tend to perform better in the industry as they have solid industrial experience while developing software projects in the club.
-                        By joining us, we will increase both your technical and soft skills which includes programming skills, confidence level, communication skills, leadership skills, and many more...
-                        Afraid of insufficient time in participating our activites? Not to worry! You have the flexibility to join only projects you are interested in! Join now!
-                    </p>
-                </div>
-            </div>
+    <section class="contact-area">
+        <div class="contact-content">
+            <h1 class="contactus-title">CONTACT US</h1>
+            <p class="textquestion">Any questions? Drop us a message!</p>
         </div>
-    </section>
-
-    <section class="gallery">
-        <div class="container">
-            <div class="col-md-10 col-lg-8 w-100 d-flex flex-column justify-content-center">
-                <h1 class="text-center">GALLERY</h1>
-                <div class="img-wrappers w-100 row">
-                    <div class="img-wrapper col-md-6">
-                        <img class="w-100" src="./images/developers.jpg" alt="Developers">
-                        <div class="shader w-100"></div>
-                        <div class="subtitle">We Develop.</div>
+    
+        <div class="contact-box">
+            <div class="contact-info">
+                <div class="container">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Jalan Teknologi 5, Taman Teknologi Malaysia, <br>57000 Kuala Lumpur, Wilayah Persekutuan <br>Kuala Lumpur</p>
                     </div>
-                    <div class="img-wrapper col-md-6">
-                        <img class="w-100" src="./images/teamwork.jpg" alt="Teamwork">
-                        <div class="shader w-100"></div>
-                        <div class="subtitle">We Help Each Other.</div>
+                </div>
+                <div class="container">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>6084797377</p>
                     </div>
-                    <div class="img-wrapper col-md-6">
-                        <img class="w-100" src="./images/developers2.jpg" alt="Focus & Strive">
-                        <div class="shader w-100"></div>
-                        <div class="subtitle">We Strive.</div>
-                    </div>
-                    <div class="img-wrapper col-md-6">
-                        <img class="w-100" src="./images/discussion.jpg" alt="Fun">
-                        <div class="shader w-100"></div>
-                        <div class="subtitle">We Had Fun.</div>
+                </div>
+                <div class="container">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>apu_gdsc@gmail.com</p>
                     </div>
                 </div>
             </div>
+            <div class="contact-form">
+                <form id="form">
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                        <input id="fullname" type="text" name="" required="required">
+                        <span>Full Name</span>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <input id="email" type="text" name="" required="required">
+                        <span>Email</span>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <textarea required="required"></textarea>
+                        <span>Write your message..</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="soc-media">
+            <a href="https://my.linkedin.com/company/apusds" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/apusds/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/dsc.apu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
     </section>
-
+    
     <footer>
         <div class="container footer-wrapper">
         <div class="row footer-content">
@@ -171,5 +182,6 @@
 
         </div>
     </footer>
+    
 </body>
 </html>
