@@ -27,7 +27,7 @@ h2, h3, ul, p {
 
 a {
     text-decoration: none;
-    transition: color 0.4s;
+    transition: color 0.5s;
 }
 
 li {
@@ -92,11 +92,11 @@ nav {
 }
 
 .desk-nav-link {
-    color: white;
+    color: rgb(229, 229, 229);
 }
 
 .desk-nav-link:hover {
-    color: rgb(137, 158, 227);
+    color: rgb(137, 158, 227) !important;
 }
 
 .nav-open {

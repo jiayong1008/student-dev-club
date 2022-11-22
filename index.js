@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     navScrollAnimation();
     navOpenAnimation();
-    // aboutGalleryAnimation();
 });
 
 // NAV SCROLL ANIMATION
@@ -24,13 +23,11 @@ function navScrollAnimation() {
     window.onscroll = () => {
         if (window.scrollY > 30) {
             if (tl.paused() || tl.reversed()) {
-                console.log("Playing animation.."+window.scrollY);
                 tl.play();
             }
 
         } else {
             if (!tl.paused() && !tl.reversed()) {
-                console.log("Reversing animation.."+window.scrollY);
                 tl.reverse();
             }
         }
